@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="methods" name="Failed suite [suite]">
+  <listeners>
+    <listener class-name="listner.RetryListner"/>
+  </listeners>
+  <test thread-count="1" parallel="methods" name="ChromeTest(failed)">
+    <classes>
+      <class name="workflow.STOR_1002_PrintDataFromTable">
+        <methods>
+          <include name="getResult"/>
+          <include name="STOR_1002_PrintDataFromTable"/>
+          <include name="flushExtent"/>
+          <include name="tearDown"/>
+          <include name="extentReportSetup"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- workflow.STOR_1002_PrintDataFromTable -->
+      <class name="workflow.STOR_1000_InputFormValidationVerification">
+        <methods>
+          <include name="getResult"/>
+          <include name="STOR_1000_InputFormValidationVerification"/>
+          <include name="tearDown"/>
+          <include name="flushExtent"/>
+          <include name="init"/>
+          <include name="extentReportSetup"/>
+        </methods>
+      </class> <!-- workflow.STOR_1000_InputFormValidationVerification -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [suite] -->

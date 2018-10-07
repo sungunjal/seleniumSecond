@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="suite" parallel="methods" thread-count="1">
+	<listeners>
+		<listener class-name="listner.RetryListner" />
+	</listeners>
+	<test name="ChromeTest">
+		<classes>
+			<class name="workflow.STOR_1000_InputFormValidationVerification" />
+			<class name="workflow.STOR_1001_FileDownloadVerification" />
+			<class name="workflow.STOR_1002_PrintDataFromTable" />
+			<class name="workflow.STOR_1003_WindowHandlingVerification" />
+		</classes>
+	</test>
+</suite>

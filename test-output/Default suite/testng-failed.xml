@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="workflow.STOR_1003_WindowHandlingVerification">
+        <methods>
+          <include name="init"/>
+          <include name="getResult"/>
+          <include name="testSTOR_1003_WindowHandlingVerification"/>
+          <include name="flushExtent"/>
+          <include name="tearDown"/>
+          <include name="extentReportSetup"/>
+        </methods>
+      </class> <!-- workflow.STOR_1003_WindowHandlingVerification -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
